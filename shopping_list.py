@@ -22,7 +22,8 @@ def add_new_shopping_list(lists_by_name, new_list_name):
     """
 
     # your code here! 
-    pass
+
+    lists_by_name[new_list_name] = []
 
 
 def remove_shopping_list(lists_by_name, list_name_to_remove):
@@ -39,7 +40,7 @@ def remove_shopping_list(lists_by_name, list_name_to_remove):
     """
 
     # your code here! 
-    pass
+    del lists_by_name[list_name_to_remove]
 
 
 def add_to_shopping_list(lists_by_name, list_name, items):
@@ -89,7 +90,7 @@ def display_shopping_list(lists_by_name, list_name):
     """
 
     # your code here! 
-    pass
+    print 
 
 
 def show_all_lists(lists_by_name):
@@ -102,7 +103,8 @@ def show_all_lists(lists_by_name):
     """
 
     # your code here! 
-    pass
+    for store, item in lists_by_name.items():
+        print store, item
 
 
 def parse_string_of_items(items_string):
